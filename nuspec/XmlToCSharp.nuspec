@@ -9,7 +9,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Library to help dynamically create C# classes from Xml</description>
 		<summary></summary>
-		<projectUrl>hthttps://github.com/ravensorb/XmlToCSharp</projectUrl>
+		<projectUrl>https://github.com/ravensorb/XmlToCSharp</projectUrl>
 		<licenseUrl>https://github.com/ravensorb/XmlToCSharp/master/LICENSE</licenseUrl>
 		<releaseNotes></releaseNotes>
 		<copyright>Copyright © 2018 Invisionware</copyright>
@@ -22,6 +22,8 @@
 		<!-- Framework: .NET 4.7.1 -->
 		<file src="..\src\Xml2CSharp\bin\$Configuration$\Xml2CSharp.dll" target="lib\net471" />
 		<file src="..\src\Xml2CSharp\bin\$Configuration$\Xml2CSharp.pdb" target="lib\net471" />
+		
+		<file src="..\src\Xml2CSharp.Clent\bin\$Configuration$\*" target="tools\client" />
 
 	</files>
 </package>

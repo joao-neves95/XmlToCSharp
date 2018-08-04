@@ -26,8 +26,8 @@
 	},
 	"nuget": {
 		"NuGetConfig": "./.nuget/NuGet.config",
-		"FeedUrl": "",
-		"FeedAPIKey": "",
+		"FeedUrl": "https://www.nuget.org",
+		"FeedAPIKey": "NUGETAPIKEY",
 		"ArtifactsPath": "./artifacts/packages",
 		"NuspecPath": "./nuspec",
 		"UpdateVersion": true,
