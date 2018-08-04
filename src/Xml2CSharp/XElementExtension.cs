@@ -6,10 +6,10 @@ namespace Xml2CSharp
 {
     public static class XElementExtension
     {
-        public static IEnumerable<Class> ExtractClassInfo(this XElement element, string customNameSpace = null)
+        public static IEnumerable<Class> ExtractClassInfo(this XElement element)
         {
             var @classes = new HashSet<Class>();
-            ElementToClass(element, classes, customNameSpace);
+            ElementToClass(element, classes);
             return @classes;
         }
 
@@ -18,14 +18,14 @@ namespace Xml2CSharp
             return !element.HasAttributes && !element.HasElements;
         }
 
-        private static Class ElementToClass(XElement xElement, ICollection<Class> classes, string customNameSpace = null)
+        private static Class ElementToClass(XElement xElement, ICollection<Class> classes)
         {
             var @class = new Class
             {
                 Name = xElement.Name.LocalName,
                 XmlName = xElement.Name.LocalName,
                 Fields =  ReplaceDuplicatesWithLists(ExtractFields(xElement, classes)).ToList(),
-                Namespace = customNameSpace ?? xElement.Name.NamespaceName
+                Namespace = xElement.Name.NamespaceName
             };
 
             SafeName(@class, @classes);

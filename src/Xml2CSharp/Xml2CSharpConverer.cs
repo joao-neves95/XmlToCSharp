@@ -5,11 +5,11 @@ namespace Xml2CSharp
 {
     public class Xml2CSharpConverer
     {
-        public IEnumerable<Class> Convert(string xml, string customNameSpace = null)
+        public IEnumerable<Class> Convert(string xml)
         {
             var xElement = XElement.Parse(xml);
 
-            return xElement.ExtractClassInfo(customNameSpace);
+            return xElement.ExtractClassInfo();
         }
 
     }

@@ -17,9 +17,17 @@ namespace Xml2CSharp.Clent
 
 			var classInfo = new Xml2CSharpConverer().Convert(xml);
 
-			var classInfoWriter = new ClassInfoWriter(classInfo);
-			classInfoWriter.Write(Console.Out);
-			classInfoWriter.Write(new StreamWriter(File.OpenWrite(options.CSharpFileName)));
+			var classInfoWriter = new ClassInfoWriter(classInfo, options.CustomNameSpace);
+
+			if (string.IsNullOrEmpty(options.CSharpFileName))
+			{
+				classInfoWriter.Write(Console.Out);
+			}
+
+			using (var sw = new StreamWriter(File.OpenWrite(options.CSharpFileName)))
+			{
+				classInfoWriter.Write(sw);
+			}
 		}
 	}
 
@@ -36,6 +44,8 @@ namespace Xml2CSharp.Clent
 		[Option('n', "namespace", DefaultValue = null,
 			HelpText = "Custom Namespace to use in output class files")]
 		public string CustomNameSpace { get; set; }
+
+		//public bool OutputToConsole { get; set; }
 
 		[ParserState]
 		public IParserState LastParserState { get; set; }
