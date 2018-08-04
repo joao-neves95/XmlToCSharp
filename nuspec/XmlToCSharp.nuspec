@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+	<metadata>
+		<id>XmlToCSharp</id>
+		<version>1.0.0-pre01</version>
+		<title>XmlToCSharp</title>
+		<authors>Invisionware</authors>
+		<owners>Invisionware</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Library to help dynamically create C# classes from Xml</description>
+		<summary></summary>
+		<projectUrl>hthttps://github.com/ravensorb/XmlToCSharp</projectUrl>
+		<licenseUrl>https://github.com/ravensorb/XmlToCSharp/master/LICENSE</licenseUrl>
+		<releaseNotes></releaseNotes>
+		<copyright>Copyright © 2018 Invisionware</copyright>
+		<language>en-US</language>
+		<tags>xml serializer</tags>
+		<dependencies>
+		</dependencies>
+	</metadata>
+	<files>
+		<!-- Framework: .NET 4.7.1 -->
+		<file src="..\src\Xml2CSharp\bin\$Configuration$\Xml2CSharp.dll" target="lib\net471" />
+		<file src="..\src\Xml2CSharp\bin\$Configuration$\Xml2CSharp.pdb" target="lib\net471" />
+
+	</files>
+</package>
