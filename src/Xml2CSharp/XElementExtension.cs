@@ -1,24 +1,56 @@
-﻿using System.Collections.Generic;
+﻿// ***********************************************************************
+// Assembly         : Xml2CSharp
+// Author           : msyoung
+// Created          : 08-04-2018
+//
+// Last Modified By : msyoung
+// Last Modified On : 08-04-2018
+// ***********************************************************************
+// <copyright file="XElementExtension.cs" company="">
+//     Copyright ©  2014
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 
 namespace Xml2CSharp
 {
-    public static class XElementExtension
+	/// <summary>
+	/// Class XElementExtension.
+	/// </summary>
+	public static class XElementExtension
     {
-        public static IEnumerable<Class> ExtractClassInfo(this XElement element)
+		/// <summary>
+		/// Extracts the class information.
+		/// </summary>
+		/// <param name="element">The element.</param>
+		/// <returns>IEnumerable&lt;Class&gt;.</returns>
+		public static IEnumerable<Class> ExtractClassInfo(this XElement element)
         {
             var @classes = new HashSet<Class>();
             ElementToClass(element, classes);
             return @classes;
         }
 
-        public static bool IsEmpty(this XElement element)
+		/// <summary>
+		/// Determines whether the specified element is empty.
+		/// </summary>
+		/// <param name="element">The element.</param>
+		/// <returns><c>true</c> if the specified element is empty; otherwise, <c>false</c>.</returns>
+		public static bool IsEmpty(this XElement element)
         {
             return !element.HasAttributes && !element.HasElements;
         }
 
-        private static Class ElementToClass(XElement xElement, ICollection<Class> classes)
+		/// <summary>
+		/// Elements to class.
+		/// </summary>
+		/// <param name="xElement">The x element.</param>
+		/// <param name="classes">The classes.</param>
+		/// <returns>Class.</returns>
+		private static Class ElementToClass(XElement xElement, ICollection<Class> classes)
         {
             var @class = new Class
             {
@@ -37,7 +69,13 @@ namespace Xml2CSharp
 
         }
 
-        private static IEnumerable<Field> ExtractFields(XElement xElement, ICollection<Class> classes)
+		/// <summary>
+		/// Extracts the fields.
+		/// </summary>
+		/// <param name="xElement">The x element.</param>
+		/// <param name="classes">The classes.</param>
+		/// <returns>IEnumerable&lt;Field&gt;.</returns>
+		private static IEnumerable<Field> ExtractFields(XElement xElement, ICollection<Class> classes)
         {
             foreach (var element in xElement.Elements().ToList())
             {
@@ -67,7 +105,12 @@ namespace Xml2CSharp
             }
         }
 
-        private static IEnumerable<Field> ReplaceDuplicatesWithLists(IEnumerable<Field> fields)
+		/// <summary>
+		/// Replaces the duplicates with lists.
+		/// </summary>
+		/// <param name="fields">The fields.</param>
+		/// <returns>IEnumerable&lt;Field&gt;.</returns>
+		private static IEnumerable<Field> ReplaceDuplicatesWithLists(IEnumerable<Field> fields)
         {
             return fields.GroupBy(field => field.Name, field => field,
                 (key, g) =>
@@ -83,7 +126,12 @@ namespace Xml2CSharp
                         g.First()).ToList();
         }
 
-        private static void SafeName(Class @class, IEnumerable<Class> classes)
+		/// <summary>
+		/// Safes the name.
+		/// </summary>
+		/// <param name="class">The class.</param>
+		/// <param name="classes">The classes.</param>
+		private static void SafeName(Class @class, IEnumerable<Class> classes)
         {
             var count = classes.Count(c => c.XmlName == @class.Name);
             if (count > 0 && !@classes.Contains(@class))
@@ -96,7 +144,12 @@ namespace Xml2CSharp
             }
         }
 
-        private static string StripBadCharacters(Class @class)
+		/// <summary>
+		/// Strips the bad characters.
+		/// </summary>
+		/// <param name="class">The class.</param>
+		/// <returns>System.String.</returns>
+		private static string StripBadCharacters(Class @class)
         {
             return @class.Name.Replace("-", "");
         }

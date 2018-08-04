@@ -1,12 +1,32 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Xml2CSharp.Clent
+// Author           : msyoung
+// Created          : 08-04-2018
+//
+// Last Modified By : ravensorb
+// Last Modified On : 08-04-2018
+// ***********************************************************************
+// <copyright file="Program.cs" company="">
+//     Copyright ©  2014
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.IO;
 using CommandLine;
 using CommandLine.Text;
 
 namespace Xml2CSharp.Clent
 {
+	/// <summary>
+	/// Class Program.
+	/// </summary>
 	class Program
 	{
+		/// <summary>
+		/// Defines the entry point of the application.
+		/// </summary>
+		/// <param name="args">The arguments.</param>
 		static void Main(string[] args)
 		{
 			var options = new Options();
@@ -31,25 +51,46 @@ namespace Xml2CSharp.Clent
 		}
 	}
 
+	/// <summary>
+	/// Class Options.
+	/// </summary>
 	class Options
 	{
+		/// <summary>
+		/// Gets or sets the XML file.
+		/// </summary>
+		/// <value>The XML file.</value>
 		[Option('x', "xmlFile", Required = true,
 		  HelpText = "Xml file used to create c# files.")]
 		public string XmlFile { get; set; }
 
+		/// <summary>
+		/// Gets or sets the name of the c sharp file.
+		/// </summary>
+		/// <value>The name of the c sharp file.</value>
 		[Option('c', "cSharpFileName", DefaultValue = "classes.cs",
 		  HelpText = "Name of C# file to be created")]
 		public string CSharpFileName { get; set; }
 
+		/// <summary>
+		/// Gets or sets the custom name space.
+		/// </summary>
+		/// <value>The custom name space.</value>
 		[Option('n', "namespace", DefaultValue = null,
 			HelpText = "Custom Namespace to use in output class files")]
 		public string CustomNameSpace { get; set; }
 
-		//public bool OutputToConsole { get; set; }
-
+		/// <summary>
+		/// Gets or sets the last state of the parser.
+		/// </summary>
+		/// <value>The last state of the parser.</value>
 		[ParserState]
 		public IParserState LastParserState { get; set; }
 
+		/// <summary>
+		/// Gets the usage.
+		/// </summary>
+		/// <returns>System.String.</returns>
 		[HelpOption]
 		public string GetUsage()
 		{

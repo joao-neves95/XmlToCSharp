@@ -1,13 +1,40 @@
-﻿using System.Collections.Generic;
+﻿// ***********************************************************************
+// Assembly         : Xml2CSharp
+// Author           : msyoung
+// Created          : 08-04-2018
+//
+// Last Modified By : msyoung
+// Last Modified On : 08-04-2018
+// ***********************************************************************
+// <copyright file="ClassInfoWriter.cs" company="">
+//     Copyright ©  2014
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System.Collections.Generic;
 using System.IO;
 
 namespace Xml2CSharp
 {
+	/// <summary>
+	/// Class ClassInfoWriter.
+	/// </summary>
 	public class ClassInfoWriter
 	{
+		/// <summary>
+		/// The class information
+		/// </summary>
 		private readonly IEnumerable<Class> _classInfo;
+		/// <summary>
+		/// The custom name space
+		/// </summary>
 		private readonly string _customNameSpace;
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="ClassInfoWriter"/> class.
+		/// </summary>
+		/// <param name="classInfo">The class information.</param>
+		/// <param name="customNameSpace">The custom name space.</param>
 		public ClassInfoWriter(IEnumerable<Class> classInfo, string customNameSpace = null)
 		{
 			_classInfo = classInfo;
@@ -15,6 +42,10 @@ namespace Xml2CSharp
 
 		}
 
+		/// <summary>
+		/// Writes the specified text writer.
+		/// </summary>
+		/// <param name="textWriter">The text writer.</param>
 		public void Write(TextWriter textWriter)
 		{
 			string tabChar = null;
