@@ -11,10 +11,10 @@
 // </copyright>
 // <summary></summary>
 // ***********************************************************************
-using System;
-using System.IO;
 using CommandLine;
 using CommandLine.Text;
+using System;
+using System.IO;
 
 namespace Xml2CSharp.Clent
 {
@@ -31,7 +31,9 @@ namespace Xml2CSharp.Clent
 		{
 			var options = new Options();
 			if (!Parser.Default.ParseArguments(args, options))
+			{
 				return;
+			}
 
 			var xml = File.ReadAllText(options.XmlFile);
 
@@ -41,12 +43,20 @@ namespace Xml2CSharp.Clent
 
 			if (string.IsNullOrEmpty(options.CSharpFileName))
 			{
+				classInfoWriter.WriteHeader(Console.Out);
 				classInfoWriter.Write(Console.Out);
+				classInfoWriter.WriteFooter(Console.Out);
 			}
 
-			using (var sw = new StreamWriter(File.OpenWrite(options.CSharpFileName)))
+			if (!string.IsNullOrEmpty(options.CSharpFileName))
 			{
-				classInfoWriter.Write(sw);
+				using (var sw = new StreamWriter(File.OpenWrite(options.CSharpFileName)))
+				{
+					classInfoWriter.WriteHeader(sw);
+					classInfoWriter.Write(sw);
+					classInfoWriter.WriteFooter(sw);
+				}
+
 			}
 		}
 	}
@@ -68,7 +78,7 @@ namespace Xml2CSharp.Clent
 		/// Gets or sets the name of the c sharp file.
 		/// </summary>
 		/// <value>The name of the c sharp file.</value>
-		[Option('c', "cSharpFileName", DefaultValue = "classes.cs",
+		[Option('c', "cSharpFileName", DefaultValue = null,
 		  HelpText = "Name of C# file to be created")]
 		public string CSharpFileName { get; set; }
 

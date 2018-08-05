@@ -43,6 +43,11 @@ namespace Xml2CSharp
 		/// </summary>
 		/// <value>The name of the XML.</value>
 		public string XmlName { get; set; }
+		/// <summary>
+		/// Gets or sets a value indicating whether this instance is generic collection.
+		/// </summary>
+		/// <value><c>true</c> if this instance is generic collection; otherwise, <c>false</c>.</value>
+		public bool IsGenericCollection { get; set; }
 
 		/// <summary>
 		/// Equalses the specified other.

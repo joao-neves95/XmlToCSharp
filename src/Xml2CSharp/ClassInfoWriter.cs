@@ -13,6 +13,7 @@
 // ***********************************************************************
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Xml2CSharp
 {
@@ -42,6 +43,30 @@ namespace Xml2CSharp
 
 		}
 
+		public void WriteHeader(TextWriter textWriter)
+		{
+			textWriter.WriteLine("using System;");
+			textWriter.WriteLine("using System.Xml.Serialization;");
+			if (_classInfo.SelectMany(x => x.Fields).Any(x => x.IsGenericCollection)) textWriter.WriteLine("using System.Collections.Generic;");
+			
+			textWriter.WriteLine();
+
+
+			if (!string.IsNullOrEmpty(_customNameSpace))
+			{
+				textWriter.WriteLine("namespace {0}", _customNameSpace);
+				textWriter.WriteLine("{");
+			}
+		}
+
+		public void WriteFooter(TextWriter textWriter)
+		{
+			if (!string.IsNullOrEmpty(_customNameSpace))
+			{
+				textWriter.WriteLine("}");
+			}
+		}
+
 		/// <summary>
 		/// Writes the specified text writer.
 		/// </summary>
@@ -50,34 +75,38 @@ namespace Xml2CSharp
 		{
 			string tabChar = null;
 
-			using (textWriter)
+			if (!string.IsNullOrEmpty(_customNameSpace))
 			{
-				if (!string.IsNullOrEmpty(_customNameSpace))
+				tabChar = "\t";
+			}
+
+			foreach (var @class in _classInfo)
+			{
+				textWriter.Write("{0}[XmlRoot(ElementName=\"{1}\"", tabChar, @class.XmlName);
+
+				if (!string.IsNullOrEmpty(@class.Namespace)) textWriter.Write(", Namespace=\"{0}\"", @class.Namespace);
+
+				textWriter.Write(")]");
+				textWriter.WriteLine();
+
+				textWriter.WriteLine("{0}public class {1}", tabChar, @class.Name);
+				textWriter.WriteLine("{0}{{", tabChar);
+
+				foreach (var field in @class.Fields)
 				{
-					textWriter.WriteLine("namespace {0}", _customNameSpace);
-					textWriter.WriteLine("{");
-					tabChar = "\t";
+					textWriter.Write("{0}\t[Xml{1}({1}Name=\"{2}\"", tabChar, field.XmlType, field.XmlName);
+
+					if (!string.IsNullOrEmpty(field.Namespace)) textWriter.Write(", Namespace=\"{0}\"", field.Namespace);
+
+					textWriter.Write(")]");
+					textWriter.WriteLine();
+
+					textWriter.WriteLine("{0}\tpublic {1} {2} {{ get; set; }}", tabChar, field.Type, field.Name);
 				}
 
-				foreach (var @class in _classInfo)
-				{
-					textWriter.WriteLine("{0}[XmlRoot(ElementName=\"{1}\", Namespace=\"{2}\")]", tabChar, @class.XmlName, @class.Namespace);
-					textWriter.WriteLine("{0}public class {1} {{", tabChar, @class.Name);
-					foreach (var field in @class.Fields)
-					{
-						textWriter.WriteLine("{0}\t[Xml{0}({1}Name=\"{2}\", Namespace=\"{3}\")]", tabChar, field.XmlType, field.XmlName, field.Namespace);
-						textWriter.WriteLine("{0}\tpublic {1} {2};", tabChar, field.Type, field.Name);
-					}
-
-					textWriter.Write(tabChar);
-					textWriter.WriteLine("}");
-					textWriter.WriteLine("");
-				}
-
-				if (!string.IsNullOrEmpty(_customNameSpace))
-				{
-					textWriter.WriteLine("}");
-				}
+				textWriter.Write(tabChar);
+				textWriter.WriteLine("}");
+				textWriter.WriteLine("");
 			}
 		}
 	}
