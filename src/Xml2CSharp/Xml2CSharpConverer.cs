@@ -16,22 +16,21 @@ using System.Xml.Linq;
 
 namespace Xml2CSharp
 {
-	/// <summary>
-	/// Class Xml2CSharpConverer.
-	/// </summary>
-	public class Xml2CSharpConverer
+    /// <summary>
+    /// Class Xml2CSharpConverer.
+    /// </summary>
+    public class Xml2CSharpConverer
     {
-		/// <summary>
-		/// Converts the specified XML.
-		/// </summary>
-		/// <param name="xml">The XML.</param>
-		/// <returns>IEnumerable&lt;Class&gt;.</returns>
-		public IEnumerable<Class> Convert(string xml)
+        /// <summary>
+        /// Converts the specified XML.
+        /// </summary>
+        /// <param name="xml">The XML.</param>
+        /// <returns>IEnumerable&lt;Class&gt;.</returns>
+        public IEnumerable<Class> Convert(string xml)
         {
             var xElement = XElement.Parse(xml);
 
             return xElement.ExtractClassInfo();
         }
-
     }
 }

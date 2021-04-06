@@ -10,8 +10,8 @@
       <software>Finale 2011 for Windows</software>
       <software>Dolet 6.0 for Finale</software>
       <encoding-date>2011-08-08</encoding-date>
-      <supports attribute="new-system" element="print" type="yes" value="yes"/>
-      <supports attribute="new-page" element="print" type="yes" value="yes"/>
+      <supports attribute="new-system" element="print" type="yes" value="yes" />
+      <supports attribute="new-page" element="print" type="yes" value="yes" />
     </encoding>
   </identification>
   <defaults>
@@ -53,10 +53,10 @@
       <distance type="hyphen">60</distance>
       <distance type="beam">8</distance>
     </appearance>
-    <music-font font-family="Maestro,engraved" font-size="20.5"/>
-    <word-font font-family="Times New Roman" font-size="10.25"/>
-    <lyric-font font-family="ＭＳ ゴシック" font-size="10.25"/>
-    <lyric-language xml:lang="ja"/>	
+    <music-font font-family="Maestro,engraved" font-size="20.5" />
+    <word-font font-family="Times New Roman" font-size="10.25" />
+    <lyric-font font-family="ＭＳ ゴシック" font-size="10.25" />
+    <lyric-language xml:lang="ja" />
   </defaults>
   <credit page="1">
     <credit-type>title</credit-type>
@@ -71,7 +71,7 @@
     <credit-words default-x="602" default-y="73" font-size="9" halign="center" valign="bottom">Transcription donated to the public domain, 2005 by Tom Potter</credit-words>
   </credit>
   <credit page="1">
-    <credit-words default-x="129" default-y="244" font-size="11" valign="top" xml:space="preserve">Source: "Japanese Popular Music: a collection of the popular music of Japan rendered in to the 
+    <credit-words default-x="129" default-y="244" font-size="11" valign="top" xml:space="preserve">Source: "Japanese Popular Music: a collection of the popular music of Japan rendered in to the
 staff notation", by Y. Nagai and K. Kobatake, 2nd ed., Osaka, S. Miki &amp; Co., 1892, pp. 96-97.
 
 Transcribed into Finale music notation by Tom Potter, 2005.  See http://www.daisyfield.com/music/
@@ -126,15 +126,15 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <direction-type>
           <words default-y="23" font-size="12" font-weight="bold">Allegro</words>
         </direction-type>
-        <sound tempo="92"/>
+        <sound tempo="92" />
       </direction>
       <direction placement="below">
         <direction-type>
           <dynamics default-x="76" default-y="-67" halign="center">
-            <f/>
+            <f />
           </dynamics>
         </direction-type>
-        <sound dynamics="98"/>
+        <sound dynamics="98" />
       </direction>
       <note default-x="80">
         <pitch>
@@ -285,11 +285,11 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="0">up</stem>
       </note>
       <note default-x="88">
-        <rest/>
+        <rest />
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -352,7 +352,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="0">up</stem>
       </note>
       <note default-x="94">
@@ -474,10 +474,10 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
       <direction placement="below">
         <direction-type>
           <dynamics default-x="6" default-y="-72" halign="center">
-            <f/>
+            <f />
           </dynamics>
         </direction-type>
-        <sound dynamics="98"/>
+        <sound dynamics="98" />
       </direction>
       <note default-x="10">
         <pitch>
@@ -534,11 +534,11 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="-5">up</stem>
       </note>
       <note default-x="84">
-        <rest/>
+        <rest />
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -549,10 +549,10 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
       <direction placement="below">
         <direction-type>
           <dynamics default-x="14" default-y="-74" halign="center">
-            <mf/>
+            <mf />
           </dynamics>
         </direction-type>
-        <sound dynamics="83"/>
+        <sound dynamics="83" />
       </direction>
       <note default-x="10">
         <pitch>
@@ -640,7 +640,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="13" width="233">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="52">
         <pitch>
           <step>A</step>
@@ -716,7 +716,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>テ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="58">
@@ -773,7 +773,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ニ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="111">
@@ -802,7 +802,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ワ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="48">
@@ -829,7 +829,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ニ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="122">
@@ -875,7 +875,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>サイ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="130">
@@ -904,7 +904,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>タ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="50">
@@ -960,7 +960,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="19" width="230">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="52">
         <pitch>
           <step>B</step>
@@ -1004,7 +1004,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>カ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="184">
@@ -1034,7 +1034,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>セ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="50">
@@ -1061,7 +1061,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>タ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="131">
@@ -1086,7 +1086,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="-5">up</stem>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
@@ -1184,7 +1184,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>サ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="110">
@@ -1248,7 +1248,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="25" width="164">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="52">
         <pitch>
           <step>A</step>
@@ -1257,7 +1257,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="10">up</stem>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
@@ -1294,7 +1294,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>イ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="48">
@@ -1321,7 +1321,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ワ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="124">
@@ -1346,7 +1346,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="-5">up</stem>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
@@ -1551,7 +1551,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="31" width="190">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="49">
         <pitch>
           <step>F</step>
@@ -1826,7 +1826,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ノ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="86">
@@ -1946,9 +1946,9 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="36" width="220">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="52">
-        <rest/>
+        <rest />
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -2133,7 +2133,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     <!--=======================================================-->
     <measure number="39" width="120">
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -2148,7 +2148,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <type>eighth</type>
         <stem default-y="-49.5">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
@@ -2165,7 +2165,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <type>quarter</type>
         <stem default-y="-40">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
@@ -2188,7 +2188,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>テ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="45">
@@ -2242,12 +2242,12 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <stem default-y="-50">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ト</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="45">
@@ -2261,7 +2261,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <stem default-y="-57">down</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="74">
@@ -2277,7 +2277,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
     </measure>
     <!--=======================================================-->
     <measure number="42" width="222">
-      <print new-system="yes"/>
+      <print new-system="yes" />
       <note default-x="49">
         <pitch>
           <step>E</step>
@@ -2291,7 +2291,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ヤ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="92">
@@ -2342,12 +2342,12 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>12</duration>
         <voice>1</voice>
         <type>quarter</type>
-        <dot/>
+        <dot />
         <stem default-y="0">up</stem>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>シ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="87">
@@ -2376,7 +2376,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ノ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="51">
@@ -2455,7 +2455,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <beam number="1">end</beam>
       </note>
       <note default-x="112">
-        <rest/>
+        <rest />
         <duration>4</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -2468,17 +2468,17 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <duration>3</duration>
         <voice>1</voice>
         <type>16th</type>
-        <dot/>
+        <dot />
         <stem default-y="12.5">up</stem>
         <beam number="1">begin</beam>
         <beam number="2">begin</beam>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>キョ</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="215">
@@ -2507,7 +2507,7 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <type>quarter</type>
         <stem default-y="0">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="64">
@@ -2520,12 +2520,12 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <type>quarter</type>
         <stem default-y="0">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-80" number="1">
           <syllabic>single</syllabic>
           <text>ク</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
     </measure>
@@ -2541,11 +2541,11 @@ Lyrics added by Karen Tanaka and Michael Good, 2006. See http://www.recordare.co
         <type>quarter</type>
         <stem default-y="-5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="60">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>

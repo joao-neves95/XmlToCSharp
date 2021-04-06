@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using Nancy;
 
 namespace Xml2CSharp.Web
 {
@@ -7,13 +6,11 @@ namespace Xml2CSharp.Web
     {
         public Home()
         {
-            Get["/"] = parameters =>
-            {
+            Get["/"] = parameters => {
                 return View["Index"];
             };
 
-            Post["/"] = parameters =>
-            {
+            Post["/"] = parameters => {
                 var xml = this.Request.Form.xml;
                 var classInfo = new Xml2CSharpConverer().Convert(xml);
 
@@ -25,7 +22,6 @@ namespace Xml2CSharp.Web
                 return View["result", new ConvertResponse { CSharpCode = stringWriter.ToString() }];
             };
         }
-
     }
 
     public class ConvertResponse

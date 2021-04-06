@@ -9,14 +9,19 @@ namespace Xml2CSharp.ExampleOutputs
     {
         [XmlElement(ElementName = "TITLE", Namespace = "")]
         public String TITLE;
+
         [XmlElement(ElementName = "ARTIST", Namespace = "")]
         public String ARTIST;
+
         [XmlElement(ElementName = "COUNTRY", Namespace = "")]
         public String COUNTRY;
+
         [XmlElement(ElementName = "COMPANY", Namespace = "")]
         public String COMPANY;
+
         [XmlElement(ElementName = "PRICE", Namespace = "")]
         public String PRICE;
+
         [XmlElement(ElementName = "YEAR", Namespace = "")]
         public String YEAR;
     }
@@ -27,5 +32,4 @@ namespace Xml2CSharp.ExampleOutputs
         [XmlElement(ElementName = "", Namespace = "")]
         public List<CD> CD;
     }
-
 }

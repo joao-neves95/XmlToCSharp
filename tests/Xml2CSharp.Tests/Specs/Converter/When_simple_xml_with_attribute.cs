@@ -1,6 +1,5 @@
-﻿using System.Linq;
-using FluentAssertions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -36,13 +35,12 @@ namespace Xml2CSharp.Tests.Specs.Converter
 
         public void Then_class_has_one_field_with_type_string()
         {
-            _classInfo.First().Fields.First().Type.Should().Be("String");            
+            _classInfo.First().Fields.First().Type.Should().Be("String");
         }
 
         public void Then_class_has_one_field_with_xml_type_attribute()
         {
-            _classInfo.First().Fields.First().XmlType.Should().Be(XmlType.Attribute);                        
+            _classInfo.First().Fields.First().XmlType.Should().Be(XmlType.Attribute);
         }
-
     }
 }

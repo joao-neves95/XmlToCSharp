@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.Pocos
 {
@@ -50,7 +49,7 @@ namespace Xml2CSharp.Tests.Specs.Pocos
             };
 
             var list = new List<Class> { class1 };
-           
+
             list.Contains(class1).Should().BeTrue();
         }
 

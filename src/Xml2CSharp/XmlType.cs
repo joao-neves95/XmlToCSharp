@@ -13,18 +13,19 @@
 // ***********************************************************************
 namespace Xml2CSharp
 {
-	/// <summary>
-	/// Enum XmlType
-	/// </summary>
-	public enum XmlType
+    /// <summary>
+    /// Enum XmlType
+    /// </summary>
+    public enum XmlType
     {
-		/// <summary>
-		/// The attribute
-		/// </summary>
-		Attribute,
-		/// <summary>
-		/// The element
-		/// </summary>
-		Element
-	}
+        /// <summary>
+        /// The attribute
+        /// </summary>
+        Attribute,
+
+        /// <summary>
+        /// The element
+        /// </summary>
+        Element
+    }
 }

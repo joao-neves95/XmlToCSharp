@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Fixie;
-using Fixie.Conventions;
 
 namespace Xml2CSharp.Tests.Specs
 {
@@ -14,12 +12,11 @@ namespace Xml2CSharp.Tests.Specs
 
             Methods
                 .Where(method => method.IsVoid());
-			
-            Parameters.Add(FromInputAttributes);
 
+            Parameters.Add(FromInputAttributes);
         }
 
-        static IEnumerable<object[]> FromInputAttributes(MethodInfo method)
+        private static IEnumerable<object[]> FromInputAttributes(MethodInfo method)
         {
             return method.GetCustomAttributes<InputAttribute>(true).Select(input => input.Parameters);
         }

@@ -1,6 +1,5 @@
-﻿using System.Linq;
-using FluentAssertions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -62,6 +61,5 @@ namespace Xml2CSharp.Tests.Specs.Converter
         {
             _nestedClass.Fields.First().XmlType.Should().Be(XmlType.Attribute);
         }
-
     }
 }

@@ -5,9 +5,9 @@ namespace Xml2CSharp.Tests.Specs.Converter
 {
     public class When_xml_had_three_types_with_same_xml_name
     {
-                private readonly IEnumerable<Class> _classInfo;
+        private readonly IEnumerable<Class> _classInfo;
 
-                public When_xml_had_three_types_with_same_xml_name()
+        public When_xml_had_three_types_with_same_xml_name()
         {
             const string xml = @"<?xml version=""1.0"" encoding=""UTF-8""?>
 <!DOCTYPE score-partwise PUBLIC ""-//Recordare//DTD MusicXML 3.0 Partwise//EN"" ""http://www.musicxml.org/dtds/partwise.dtd"">
@@ -54,6 +54,6 @@ namespace Xml2CSharp.Tests.Specs.Converter
             _classInfo.Single(x => x.Name == "identification");
             _classInfo.Single(x => x.Name == "identification2");
             _classInfo.Single(x => x.Name == "identification3");
-        } 
+        }
     }
 }

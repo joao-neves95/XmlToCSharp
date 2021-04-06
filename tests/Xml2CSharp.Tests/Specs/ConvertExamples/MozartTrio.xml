@@ -9,8 +9,8 @@
       <software>Finale 2011 for Windows</software>
       <software>Dolet 6.0 for Finale</software>
       <encoding-date>2011-08-08</encoding-date>
-      <supports attribute="new-system" element="print" type="yes" value="yes"/>
-      <supports attribute="new-page" element="print" type="yes" value="yes"/>
+      <supports attribute="new-system" element="print" type="yes" value="yes" />
+      <supports attribute="new-page" element="print" type="yes" value="yes" />
     </encoding>
   </identification>
   <defaults>
@@ -55,8 +55,8 @@
       <distance type="hyphen">60</distance>
       <distance type="beam">8</distance>
     </appearance>
-    <music-font font-family="Maestro,engraved" font-size="14.4"/>
-    <word-font font-family="Times New Roman" font-size="9"/>
+    <music-font font-family="Maestro,engraved" font-size="14.4" />
+    <word-font font-family="Times New Roman" font-size="9" />
   </defaults>
   <part-list>
     <part-group number="1" type="start">
@@ -123,7 +123,7 @@
         <pan>0</pan>
       </midi-instrument>
     </score-part>
-    <part-group number="1" type="stop"/>
+    <part-group number="1" type="stop" />
   </part-list>
   <!--=========================================================-->
   <part id="P1">
@@ -157,14 +157,14 @@
           <chromatic>-3</chromatic>
         </transpose>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="109" default-y="-72" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <note default-x="114">
         <pitch>
@@ -177,7 +177,7 @@
         <stem default-y="-48.5">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="140">
@@ -194,7 +194,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="1" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>G</step>
@@ -227,7 +227,7 @@
         <type>quarter</type>
         <stem default-y="-20">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="101">
@@ -241,7 +241,7 @@
         <stem default-y="-34.5">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="127">
@@ -258,7 +258,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>D</step>
@@ -291,7 +291,7 @@
         <type>quarter</type>
         <stem default-y="-25.5">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="104">
@@ -305,7 +305,7 @@
         <stem default-y="-40">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="130">
@@ -322,7 +322,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="3" width="170">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>C</step>
@@ -389,13 +389,13 @@
         <stem default-y="-48.5">down</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="4" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="23">
         <pitch>
           <step>D</step>
@@ -408,7 +408,7 @@
         <accidental>sharp</accidental>
         <stem default-y="-45">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="63">
@@ -421,7 +421,7 @@
         <type>quarter</type>
         <stem default-y="-40">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="102">
@@ -435,7 +435,7 @@
         <stem default-y="-48.5">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="127">
@@ -452,7 +452,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="5" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>G</step>
@@ -485,7 +485,7 @@
         <type>quarter</type>
         <stem default-y="-20">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="104">
@@ -499,7 +499,7 @@
         <stem default-y="-34.5">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="130">
@@ -516,7 +516,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="168">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="21">
         <pitch>
           <step>D</step>
@@ -550,11 +550,11 @@
         <type>quarter</type>
         <stem default-y="-25.5">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="112">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -562,9 +562,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="7" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>18</duration>
         <voice>1</voice>
       </note>
@@ -577,13 +577,13 @@
         </system-layout>
       </print>
       <note default-x="90">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="141">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -603,8 +603,8 @@
         <stem default-y="-9.5">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <tuplet number="1" placement="below" type="start"/>
-          <slur bezier-x="15" bezier-y="-35" default-x="4" default-y="-64" number="1" placement="below" type="start"/>
+          <tuplet number="1" placement="below" type="start" />
+          <slur bezier-x="15" bezier-y="-35" default-x="4" default-y="-64" number="1" placement="below" type="start" />
         </notations>
       </note>
       <note default-x="198">
@@ -637,13 +637,13 @@
         <stem default-y="-15">up</stem>
         <beam number="1">end</beam>
         <notations>
-          <tuplet number="1" type="stop"/>
+          <tuplet number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="9" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -655,7 +655,7 @@
         <stem default-y="22">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur bezier-x="-16" bezier-y="-34" default-x="4" default-y="-80" number="1" type="stop"/>
+          <slur bezier-x="-16" bezier-y="-34" default-x="4" default-y="-80" number="1" type="stop" />
         </notations>
       </note>
       <note default-x="37">
@@ -670,7 +670,7 @@
         <beam number="1">continue</beam>
         <notations>
           <articulations>
-            <staccato default-x="4" default-y="-58" placement="below"/>
+            <staccato default-x="4" default-y="-58" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -686,7 +686,7 @@
         <beam number="1">continue</beam>
         <notations>
           <articulations>
-            <staccato default-x="3" default-y="-49" placement="below"/>
+            <staccato default-x="3" default-y="-49" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -702,7 +702,7 @@
         <beam number="1">continue</beam>
         <notations>
           <articulations>
-            <staccato default-x="3" default-y="-37" placement="below"/>
+            <staccato default-x="3" default-y="-37" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -718,7 +718,7 @@
         <beam number="1">continue</beam>
         <notations>
           <articulations>
-            <staccato default-x="3" default-y="-27" placement="below"/>
+            <staccato default-x="3" default-y="-27" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -734,14 +734,14 @@
         <beam number="1">end</beam>
         <notations>
           <articulations>
-            <staccato default-x="4" default-y="-17" placement="below"/>
+            <staccato default-x="4" default-y="-17" placement="below" />
           </articulations>
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="10" width="156">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -753,7 +753,7 @@
         <stem default-y="-28">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="36">
@@ -811,13 +811,13 @@
         <stem default-y="-40">down</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="11" width="160">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -828,7 +828,7 @@
         <type>half</type>
         <stem default-y="-50.5">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="110">
@@ -853,13 +853,13 @@
         <stem default-y="-42">down</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="12" width="100">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -871,25 +871,25 @@
         <stem default-y="-50.5">down</stem>
       </note>
       <note default-x="47">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
-        <repeat direction="backward" winged="none"/>
+        <repeat direction="backward" winged="none" />
       </barline>
     </measure>
     <!--=======================================================-->
     <measure implicit="yes" number="X1" width="71">
-      <print new-system="no"/>
+      <print new-system="no" />
       <barline location="left">
         <bar-style>heavy-light</bar-style>
-        <repeat direction="forward" winged="none"/>
+        <repeat direction="forward" winged="none" />
       </barline>
       <note default-x="22">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -897,42 +897,42 @@
     </measure>
     <!--=======================================================-->
     <measure number="13" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>18</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="14" width="148">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>18</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="15" width="155">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>18</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="16" width="149">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="59">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -947,13 +947,13 @@
         <type>quarter</type>
         <stem default-y="-30.5">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="17" width="1508">
-      <print new-page="yes"/>
+      <print new-page="yes" />
       <note default-x="89">
         <pitch>
           <step>G</step>
@@ -964,17 +964,17 @@
         <type>quarter</type>
         <stem default-y="-30.5">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="559">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="1028">
-        <rest/>
+        <rest />
         <duration>6</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1008,9 +1008,9 @@
           <line>2</line>
         </clef>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <note default-x="114">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1018,18 +1018,18 @@
     </measure>
     <!--=======================================================-->
     <measure number="1" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="61" default-y="-62" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
         <offset>8</offset>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1057,9 +1057,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1087,9 +1087,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="3" width="170">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1119,9 +1119,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="4" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="23">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1149,9 +1149,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="5" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1179,7 +1179,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="168">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="21">
         <pitch>
           <step>F</step>
@@ -1192,7 +1192,7 @@
         <stem default-y="1">up</stem>
       </note>
       <note default-x="71">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1209,7 +1209,7 @@
         <stem default-y="-50">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="142">
@@ -1228,7 +1228,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="7" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>B</step>
@@ -1262,7 +1262,7 @@
         <type>quarter</type>
         <stem default-y="-35.5">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="102">
@@ -1277,7 +1277,7 @@
         <stem default-y="-52">down</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="133">
@@ -1334,11 +1334,11 @@
         <type>quarter</type>
         <stem default-y="-35.5">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="175">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1346,25 +1346,25 @@
     </measure>
     <!--=======================================================-->
     <measure number="9" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="10" width="156">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="11" width="160">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -1377,7 +1377,7 @@
         <stem default-y="-11">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
       </note>
       <note default-x="37">
@@ -1436,13 +1436,13 @@
         <stem default-y="-11">up</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="12" width="100">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -1455,22 +1455,22 @@
         <stem default-y="-14.5">up</stem>
       </note>
       <note default-x="47">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
-        <repeat direction="backward" winged="none"/>
+        <repeat direction="backward" winged="none" />
       </barline>
     </measure>
     <!--=======================================================-->
     <measure implicit="yes" number="X1" width="71">
-      <print new-system="no"/>
+      <print new-system="no" />
       <barline location="left">
         <bar-style>heavy-light</bar-style>
-        <repeat direction="forward" winged="none"/>
+        <repeat direction="forward" winged="none" />
       </barline>
       <note default-x="21">
         <pitch>
@@ -1483,7 +1483,7 @@
         <stem default-y="0">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="46">
@@ -1501,7 +1501,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="13" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="22">
         <pitch>
           <step>B</step>
@@ -1535,7 +1535,7 @@
         <type>quarter</type>
         <stem default-y="-40">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="108">
@@ -1549,7 +1549,7 @@
         <stem default-y="0">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="132">
@@ -1566,7 +1566,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="14" width="148">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -1600,7 +1600,7 @@
         <type>quarter</type>
         <stem default-y="-40">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="99">
@@ -1614,7 +1614,7 @@
         <stem default-y="5">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="123">
@@ -1631,7 +1631,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="15" width="155">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>D</step>
@@ -1699,13 +1699,13 @@
         <stem default-y="-58">down</stem>
         <beam number="1">end</beam>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="16" width="149">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>G</step>
@@ -1718,7 +1718,7 @@
         <stem default-y="10.5">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
       <note default-x="34">
@@ -1742,7 +1742,7 @@
         <type>quarter</type>
         <stem default-y="-40">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="98">
@@ -1756,7 +1756,7 @@
         <stem default-y="0">up</stem>
         <beam number="1">begin</beam>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
       </note>
       <note default-x="123">
@@ -1789,17 +1789,17 @@
         <type>quarter</type>
         <stem default-y="10.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="559">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="1028">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1833,9 +1833,9 @@
           <line>2</line>
         </clef>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <note default-x="114">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1843,18 +1843,18 @@
     </measure>
     <!--=======================================================-->
     <measure number="1" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="61" default-y="-67" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
         <offset>8</offset>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1882,9 +1882,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1914,9 +1914,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="3" width="170">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1944,9 +1944,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="4" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="23">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -1976,9 +1976,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="5" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2006,7 +2006,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="168">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="21">
         <pitch>
           <step>D</step>
@@ -2018,7 +2018,7 @@
         <stem default-y="-9">up</stem>
       </note>
       <note default-x="71">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2034,13 +2034,13 @@
         <accidental>natural</accidental>
         <stem default-y="5.5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="7" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>F</step>
@@ -2082,11 +2082,11 @@
         <type>half</type>
         <stem default-y="0.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="175">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2094,25 +2094,25 @@
     </measure>
     <!--=======================================================-->
     <measure number="9" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="10" width="156">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="11" width="160">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -2123,7 +2123,7 @@
         <type>half</type>
         <stem default-y="-19.5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
       </note>
       <note default-x="110">
@@ -2138,13 +2138,13 @@
         <accidental>sharp</accidental>
         <stem default-y="-19.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="12" width="100">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -2156,25 +2156,25 @@
         <stem default-y="-19.5">up</stem>
       </note>
       <note default-x="47">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
-        <repeat direction="backward" winged="none"/>
+        <repeat direction="backward" winged="none" />
       </barline>
     </measure>
     <!--=======================================================-->
     <measure implicit="yes" number="X1" width="71">
-      <print new-system="no"/>
+      <print new-system="no" />
       <barline location="left">
         <bar-style>heavy-light</bar-style>
-        <repeat direction="forward" winged="none"/>
+        <repeat direction="forward" winged="none" />
       </barline>
       <note default-x="22">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2182,14 +2182,14 @@
     </measure>
     <!--=======================================================-->
     <measure number="13" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="22" default-y="-79" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <direction placement="above">
         <direction-type>
@@ -2212,7 +2212,7 @@
         <stem default-y="5.5">up</stem>
       </note>
       <note default-x="22">
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -2234,7 +2234,7 @@
         <stem default-y="5.5">up</stem>
       </note>
       <note default-x="70">
-        <chord/>
+        <chord />
         <pitch>
           <step>G</step>
           <alter>1</alter>
@@ -2246,7 +2246,7 @@
         <stem>up</stem>
       </note>
       <note default-x="109">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2254,7 +2254,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="14" width="148">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -2266,7 +2266,7 @@
         <stem default-y="10">up</stem>
       </note>
       <note default-x="13">
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -2287,7 +2287,7 @@
         <stem default-y="10">up</stem>
       </note>
       <note default-x="60">
-        <chord/>
+        <chord />
         <pitch>
           <step>A</step>
           <octave>4</octave>
@@ -2298,7 +2298,7 @@
         <stem>up</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2306,7 +2306,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="15" width="155">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>G</step>
@@ -2319,7 +2319,7 @@
         <stem default-y="16">up</stem>
       </note>
       <note default-x="10">
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <octave>4</octave>
@@ -2341,7 +2341,7 @@
         <stem default-y="16">up</stem>
       </note>
       <note default-x="57">
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <octave>4</octave>
@@ -2362,7 +2362,7 @@
         <stem default-y="-58">down</stem>
       </note>
       <note default-x="105">
-        <chord/>
+        <chord />
         <pitch>
           <step>C</step>
           <alter>1</alter>
@@ -2376,7 +2376,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="16" width="149">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>G</step>
@@ -2389,7 +2389,7 @@
         <stem default-y="16">up</stem>
       </note>
       <note default-x="10">
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <octave>4</octave>
@@ -2411,7 +2411,7 @@
         <stem default-y="16">up</stem>
       </note>
       <note default-x="59">
-        <chord/>
+        <chord />
         <pitch>
           <step>B</step>
           <octave>4</octave>
@@ -2422,7 +2422,7 @@
         <stem>up</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2436,7 +2436,7 @@
         </staff-layout>
       </print>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
@@ -2469,9 +2469,9 @@
           <line>3</line>
         </clef>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <note default-x="114">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2479,18 +2479,18 @@
     </measure>
     <!--=======================================================-->
     <measure number="1" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="60" default-y="-74" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
         <offset>8</offset>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2520,9 +2520,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2550,9 +2550,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="3" width="170">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2580,9 +2580,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="4" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="23">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2610,9 +2610,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="5" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="11">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2642,7 +2642,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="168">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="21">
         <pitch>
           <step>B</step>
@@ -2654,7 +2654,7 @@
         <stem default-y="11">up</stem>
       </note>
       <note default-x="71">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2669,13 +2669,13 @@
         <type>quarter</type>
         <stem default-y="-45.5">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="7" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>D</step>
@@ -2714,11 +2714,11 @@
         <type>half</type>
         <stem default-y="-50">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="175">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2726,78 +2726,78 @@
     </measure>
     <!--=======================================================-->
     <measure number="9" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="10" width="156">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="11" width="160">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>E</step>
           <octave>3</octave>
         </pitch>
         <duration>24</duration>
-        <tie type="start"/>
+        <tie type="start" />
         <voice>1</voice>
         <type>half</type>
-        <dot/>
+        <dot />
         <stem default-y="-9">up</stem>
         <notations>
-          <tied type="start"/>
+          <tied type="start" />
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="12" width="100">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>E</step>
           <octave>3</octave>
         </pitch>
         <duration>8</duration>
-        <tie type="stop"/>
+        <tie type="stop" />
         <voice>1</voice>
         <type>quarter</type>
         <stem default-y="-9">up</stem>
         <notations>
-          <tied type="stop"/>
+          <tied type="stop" />
         </notations>
       </note>
       <note default-x="47">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
-        <repeat direction="backward" winged="none"/>
+        <repeat direction="backward" winged="none" />
       </barline>
     </measure>
     <!--=======================================================-->
     <measure implicit="yes" number="X1" width="71">
-      <print new-system="no"/>
+      <print new-system="no" />
       <barline location="left">
         <bar-style>heavy-light</bar-style>
-        <repeat direction="forward" winged="none"/>
+        <repeat direction="forward" winged="none" />
       </barline>
       <note default-x="22">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2805,14 +2805,14 @@
     </measure>
     <!--=======================================================-->
     <measure number="13" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="22" default-y="-70" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <direction placement="above">
         <direction-type>
@@ -2835,7 +2835,7 @@
         <stem default-y="-50">down</stem>
       </note>
       <note default-x="22">
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2856,7 +2856,7 @@
         <stem default-y="-50">down</stem>
       </note>
       <note default-x="70">
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2867,7 +2867,7 @@
         <stem>down</stem>
       </note>
       <note default-x="109">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2875,7 +2875,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="14" width="148">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>C</step>
@@ -2888,7 +2888,7 @@
         <stem default-y="-55">down</stem>
       </note>
       <note default-x="13">
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2910,7 +2910,7 @@
         <stem default-y="-55">down</stem>
       </note>
       <note default-x="60">
-        <chord/>
+        <chord />
         <pitch>
           <step>E</step>
           <octave>4</octave>
@@ -2921,7 +2921,7 @@
         <stem>down</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2929,7 +2929,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="15" width="155">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>E</step>
@@ -2963,7 +2963,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="16" width="149">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>E</step>
@@ -2985,7 +2985,7 @@
         <stem default-y="-45.5">down</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>8</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -2999,7 +2999,7 @@
         </staff-layout>
       </print>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>24</duration>
         <voice>1</voice>
       </note>
@@ -3032,9 +3032,9 @@
           <line>4</line>
         </clef>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <note default-x="114">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3042,14 +3042,14 @@
     </measure>
     <!--=======================================================-->
     <measure number="1" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="10" default-y="-61" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <note default-x="10">
         <pitch>
@@ -3062,13 +3062,13 @@
         <stem default-y="-35">down</stem>
       </note>
       <note default-x="61">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="102">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3076,7 +3076,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>D</step>
@@ -3088,13 +3088,13 @@
         <stem default-y="-55">down</stem>
       </note>
       <note default-x="63">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="105">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3102,7 +3102,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="3" width="170">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>E</step>
@@ -3114,13 +3114,13 @@
         <stem default-y="-50.5">down</stem>
       </note>
       <note default-x="63">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="116">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3128,7 +3128,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="4" width="153">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="23">
         <pitch>
           <step>F</step>
@@ -3141,13 +3141,13 @@
         <stem default-y="-45.5">down</stem>
       </note>
       <note default-x="63">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="102">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3155,7 +3155,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="5" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>C</step>
@@ -3168,13 +3168,13 @@
         <stem default-y="11">up</stem>
       </note>
       <note default-x="63">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="104">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3182,7 +3182,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="168">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="21">
         <pitch>
           <step>D</step>
@@ -3194,13 +3194,13 @@
         <stem default-y="-55">down</stem>
       </note>
       <note default-x="71">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note default-x="112">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3208,9 +3208,9 @@
     </measure>
     <!--=======================================================-->
     <measure number="7" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>6</duration>
         <voice>1</voice>
       </note>
@@ -3223,32 +3223,32 @@
         </staff-layout>
       </print>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>6</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="9" width="161">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>6</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="10" width="156">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>6</duration>
         <voice>1</voice>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="11" width="160">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>E</step>
@@ -3259,9 +3259,9 @@
         <type>quarter</type>
         <stem default-y="-14">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
           <articulations>
-            <staccato default-x="3" default-y="-63" placement="below"/>
+            <staccato default-x="3" default-y="-63" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -3276,7 +3276,7 @@
         <stem default-y="-14">up</stem>
         <notations>
           <articulations>
-            <staccato default-x="3" default-y="-63" placement="below"/>
+            <staccato default-x="3" default-y="-63" placement="below" />
           </articulations>
         </notations>
       </note>
@@ -3290,16 +3290,16 @@
         <type>quarter</type>
         <stem default-y="-14">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
           <articulations>
-            <staccato default-x="4" default-y="-63" placement="below"/>
+            <staccato default-x="4" default-y="-63" placement="below" />
           </articulations>
         </notations>
       </note>
     </measure>
     <!--=======================================================-->
     <measure number="12" width="100">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>A</step>
@@ -3311,25 +3311,25 @@
         <stem default-y="0">up</stem>
       </note>
       <note default-x="47">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <barline location="right">
         <bar-style>light-heavy</bar-style>
-        <repeat direction="backward" winged="none"/>
+        <repeat direction="backward" winged="none" />
       </barline>
     </measure>
     <!--=======================================================-->
     <measure implicit="yes" number="X1" width="71">
-      <print new-system="no"/>
+      <print new-system="no" />
       <barline location="left">
         <bar-style>heavy-light</bar-style>
-        <repeat direction="forward" winged="none"/>
+        <repeat direction="forward" winged="none" />
       </barline>
       <note default-x="22">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3337,14 +3337,14 @@
     </measure>
     <!--=======================================================-->
     <measure number="13" width="158">
-      <print new-system="no"/>
+      <print new-system="no" />
       <direction placement="below">
         <direction-type>
           <dynamics default-x="22" default-y="-70" halign="left">
-            <p/>
+            <p />
           </dynamics>
         </direction-type>
-        <sound dynamics="54"/>
+        <sound dynamics="54" />
       </direction>
       <direction placement="above">
         <direction-type>
@@ -3377,7 +3377,7 @@
         <stem default-y="-50.5">down</stem>
       </note>
       <note default-x="109">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3385,7 +3385,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="14" width="148">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="13">
         <pitch>
           <step>E</step>
@@ -3407,7 +3407,7 @@
         <stem default-y="-50.5">down</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3415,7 +3415,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="15" width="155">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>E</step>
@@ -3449,7 +3449,7 @@
     </measure>
     <!--=======================================================-->
     <measure number="16" width="149">
-      <print new-system="no"/>
+      <print new-system="no" />
       <note default-x="10">
         <pitch>
           <step>E</step>
@@ -3471,7 +3471,7 @@
         <stem default-y="-14">up</stem>
       </note>
       <note default-x="99">
-        <rest/>
+        <rest />
         <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
@@ -3485,7 +3485,7 @@
         </staff-layout>
       </print>
       <note>
-        <rest measure="yes"/>
+        <rest measure="yes" />
         <duration>6</duration>
         <voice>1</voice>
       </note>

@@ -8,8 +8,8 @@
       <software>Finale 2011 for Windows</software>
       <software>Dolet 6.0 for Finale</software>
       <encoding-date>2011-08-08</encoding-date>
-      <supports attribute="new-system" element="print" type="yes" value="yes"/>
-      <supports attribute="new-page" element="print" type="yes" value="yes"/>
+      <supports attribute="new-system" element="print" type="yes" value="yes" />
+      <supports attribute="new-page" element="print" type="yes" value="yes" />
     </encoding>
   </identification>
   <defaults>
@@ -51,9 +51,9 @@
       <distance type="hyphen">60</distance>
       <distance type="beam">8</distance>
     </appearance>
-    <music-font font-family="Maestro,engraved" font-size="18.25"/>
-    <word-font font-family="Book Antiqua" font-size="10"/>
-    <lyric-font font-family="Book Antiqua" font-size="10"/>
+    <music-font font-family="Maestro,engraved" font-size="18.25" />
+    <word-font font-family="Book Antiqua" font-size="10" />
+    <lyric-font font-family="Book Antiqua" font-size="10" />
   </defaults>
   <part-list>
     <score-part id="P1">
@@ -89,7 +89,7 @@
           <line>2</line>
         </clef>
       </attributes>
-      <sound tempo="120"/>
+      <sound tempo="120" />
       <direction directive="yes" placement="above">
         <direction-type>
           <words default-y="20">Angelus dicit:</words>
@@ -105,12 +105,12 @@
         <type>quarter</type>
         <stem default-y="5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>single</syllabic>
           <text>Quem</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="102">
@@ -123,7 +123,7 @@
         <type>quarter</type>
         <stem default-y="0.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="143">
@@ -136,7 +136,7 @@
         <type>quarter</type>
         <stem default-y="-9.5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>begin</syllabic>
@@ -163,7 +163,7 @@
         <type>quarter</type>
         <stem default-y="-4.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="267">
@@ -176,7 +176,7 @@
         <type>quarter</type>
         <stem default-y="0.5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>middle</syllabic>
@@ -203,7 +203,7 @@
         <type>quarter</type>
         <stem default-y="0.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="390">
@@ -258,7 +258,7 @@
         <type>quarter</type>
         <stem default-y="10">up</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>middle</syllabic>
@@ -295,7 +295,7 @@
         <type>quarter</type>
         <stem default-y="10">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="679">
@@ -308,12 +308,12 @@
         <type>quarter</type>
         <stem default-y="-50">down</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>end</syllabic>
           <text>chro,</text>
-          <extend/>
+          <extend />
         </lyric>
       </note>
       <note default-x="720">
@@ -346,7 +346,7 @@
         <type>quarter</type>
         <stem default-y="5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <direction placement="below">
@@ -365,7 +365,7 @@
         <type>quarter</type>
         <stem default-y="5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>single</syllabic>
@@ -382,7 +382,7 @@
         <type>quarter</type>
         <stem default-y="10">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="927">
@@ -395,7 +395,7 @@
         <type>quarter</type>
         <stem default-y="5">up</stem>
         <notations>
-          <slur number="1" placement="below" type="start"/>
+          <slur number="1" placement="below" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>begin</syllabic>
@@ -412,7 +412,7 @@
         <type>quarter</type>
         <stem default-y="0.5">up</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="1009">
@@ -425,7 +425,7 @@
         <type>quarter</type>
         <stem default-y="10">up</stem>
         <notations>
-          <slur number="1" placement="above" type="start"/>
+          <slur number="1" placement="above" type="start" />
         </notations>
         <lyric default-y="-76" justify="left" number="1">
           <syllabic>middle</syllabic>
@@ -442,7 +442,7 @@
         <type>quarter</type>
         <stem default-y="-50">down</stem>
         <notations>
-          <slur number="1" type="stop"/>
+          <slur number="1" type="stop" />
         </notations>
       </note>
       <note default-x="1091">
