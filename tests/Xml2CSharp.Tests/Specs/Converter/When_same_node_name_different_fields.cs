@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+
 using FluentAssertions;
-using System.Collections.Generic;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -25,13 +26,11 @@ namespace Xml2CSharp.Tests.Specs.Converter
         public void Then_node_has_xml_name_of_node()
         {
             _classInfo.Single(x => x.Name == "node").XmlName.Should().Be("node");
-
         }
 
         public void Then_node2_has_xml_name_of_node()
         {
             _classInfo.Single(x => x.Name == "node2").XmlName.Should().Be("node");
         }
-
     }
 }

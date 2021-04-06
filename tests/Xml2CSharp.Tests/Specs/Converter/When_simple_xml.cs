@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+
 using FluentAssertions;
-using System.Collections.Generic;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -18,7 +19,7 @@ namespace Xml2CSharp.Tests.Specs.Converter
         {
             _classInfo.Should().HaveCount(1);
         }
-        
+
         public void Then_class_name_is_xml()
         {
             _classInfo.First().Name.Should().Be("xml");
@@ -28,6 +29,5 @@ namespace Xml2CSharp.Tests.Specs.Converter
         {
             _classInfo.First().Fields.Should().BeEmpty();
         }
-
     }
 }

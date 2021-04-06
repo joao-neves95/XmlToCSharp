@@ -1,7 +1,7 @@
 XmlToCSharp
 ===========
 
-This is based off of the original code used to create the Site for Converting XML into XmlSerializer compatable C# Classes
+Based on the site for converting XML into XmlSerializer compatible C# classes.
 
 http://xmltocsharp.azurewebsites.net/
 

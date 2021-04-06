@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+
 using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.ConvertExamples
@@ -9,7 +10,6 @@ namespace Xml2CSharp.Tests.Specs.ConvertExamples
     {
         public When_converting_examples()
         {
-            
         }
 
         [Input("BeetAnGeSample.xml")]
@@ -21,6 +21,5 @@ namespace Xml2CSharp.Tests.Specs.ConvertExamples
             writer.Write(Console.Out);
             classInfo.Select(c => c.Name).Distinct().Should().HaveCount(classInfo.Count());
         }
-
     }
 }

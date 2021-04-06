@@ -1,6 +1,8 @@
-using System.Linq;
-using FluentAssertions;
+
 using System.Collections.Generic;
+using System.Linq;
+
+using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -86,7 +88,7 @@ xmlns:f=""http://www.w3schools.com/furniture"">
 
         public void Then_field_name_has_namespace_f()
         {
-            _classInfo.Single(x => x.Name == "table2").Fields.First(f => f.Name == "name").Namespace.Should().Be("http://www.w3schools.com/furniture");            
+            _classInfo.Single(x => x.Name == "table2").Fields.First(f => f.Name == "name").Namespace.Should().Be("http://www.w3schools.com/furniture");
         }
     }
 }

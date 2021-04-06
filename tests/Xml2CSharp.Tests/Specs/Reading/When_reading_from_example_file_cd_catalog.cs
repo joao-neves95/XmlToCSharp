@@ -2,7 +2,9 @@
 using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
+
 using FluentAssertions;
+
 using Xml2CSharp.ExampleOutputs;
 
 namespace Xml2CSharp.Tests.Specs.Reading
@@ -27,8 +29,6 @@ namespace Xml2CSharp.Tests.Specs.Reading
             root.CD.First().COMPANY.Should().Be("Columbia");
             root.CD.First().PRICE.Should().Be("10.90");
             root.CD.First().YEAR.Should().Be("1985");
-
         }
-
     }
 }

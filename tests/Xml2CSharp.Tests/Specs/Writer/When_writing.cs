@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Text;
+
 using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.Writer
@@ -38,7 +38,6 @@ namespace Xml2CSharp.Tests.Specs.Writer
                             },
                         }
                     }
-                
             };
 
             var writer = new ClassInfoWriter(classInfo);

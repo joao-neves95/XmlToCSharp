@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+
 using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
     public class When_xml_name_contains_dash
     {
-                private readonly IEnumerable<Class> _classInfo;
+        private readonly IEnumerable<Class> _classInfo;
 
-                public When_xml_name_contains_dash()
+        public When_xml_name_contains_dash()
         {
             const string xml = @"
 <root-node>

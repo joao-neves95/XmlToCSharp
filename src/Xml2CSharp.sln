@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27924.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xml2CSharp", "Xml2CSharp\Xml2CSharp.csproj", "{A5CABB19-23A6-4CAF-8596-97ABAFCB65EE}"
 EndProject
@@ -10,15 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xml2CSharp.Clent", "Xml2CSharp.Clent\Xml2CSharp.Clent.csproj", "{35F0DD15-760A-4193-A637-4EB768A34FE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xml2CSharp.ExampleOutputs", "Xml2CSharp.ExampleOutputs\Xml2CSharp.ExampleOutputs.csproj", "{BA72D5A1-E962-4D53-8E42-4CB51B850A77}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{0D7176F6-81A7-46B1-8091-24880FEAB433}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xml2CSharp.Web", "Xml2CSharp.Web\Xml2CSharp.Web.csproj", "{0EA43F89-0536-4691-B108-7392E49D2C48}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{EC3ECC84-C510-4190-93CE-0F204FFEA5CF}"
 EndProject
@@ -29,11 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuspec", ".nuspec", "{54DC
 		..\nuspec\XmlToCSharp.nuspec = ..\nuspec\XmlToCSharp.nuspec
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{03B4C21E-161F-4407-AC72-33441CF52D10}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{785946D4-A93C-4685-9849-46163A050652}"
 	ProjectSection(SolutionItems) = preProject
-		..\build.cake = ..\build.cake
-		..\build.settings.json = ..\build.settings.json
-		..\build.version.json = ..\build.version.json
+		.editorconfig = .editorconfig
 		..\LICENSE = ..\LICENSE
 		..\README.md = ..\README.md
 	EndProjectSection
@@ -51,19 +40,12 @@ Global
 		{1A6909DF-CB1C-4BDF-99F2-977B09F69BDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A6909DF-CB1C-4BDF-99F2-977B09F69BDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A6909DF-CB1C-4BDF-99F2-977B09F69BDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1A6909DF-CB1C-4BDF-99F2-977B09F69BDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35F0DD15-760A-4193-A637-4EB768A34FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{35F0DD15-760A-4193-A637-4EB768A34FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35F0DD15-760A-4193-A637-4EB768A34FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35F0DD15-760A-4193-A637-4EB768A34FE1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA72D5A1-E962-4D53-8E42-4CB51B850A77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0EA43F89-0536-4691-B108-7392E49D2C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0EA43F89-0536-4691-B108-7392E49D2C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0EA43F89-0536-4691-B108-7392E49D2C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0EA43F89-0536-4691-B108-7392E49D2C48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,7 +55,6 @@ Global
 		{1A6909DF-CB1C-4BDF-99F2-977B09F69BDF} = {24FF8B01-03D2-41C9-B1D6-3F6799C06E97}
 		{35F0DD15-760A-4193-A637-4EB768A34FE1} = {EC3ECC84-C510-4190-93CE-0F204FFEA5CF}
 		{BA72D5A1-E962-4D53-8E42-4CB51B850A77} = {24FF8B01-03D2-41C9-B1D6-3F6799C06E97}
-		{0EA43F89-0536-4691-B108-7392E49D2C48} = {EC3ECC84-C510-4190-93CE-0F204FFEA5CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBA541E4-AD1B-4FC4-9623-560E08869C50}

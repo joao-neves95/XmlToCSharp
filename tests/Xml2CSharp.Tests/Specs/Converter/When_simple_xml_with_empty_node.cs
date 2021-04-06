@@ -1,6 +1,7 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
+
 using FluentAssertions;
-using System.Collections.Generic;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {
@@ -11,10 +12,10 @@ namespace Xml2CSharp.Tests.Specs.Converter
         public When_xml_has_empty_nodes()
         {
             const string xml = @"<note>
-	<to>Tove</to>
-	<from>Jani</from>
-	<heading>Reminder</heading>
-	<body>Don't forget me this weekend!</body>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
 </note>
 ";
             _classInfo = new Xml2CSharpConverer().Convert(xml);
@@ -24,7 +25,7 @@ namespace Xml2CSharp.Tests.Specs.Converter
         {
             _classInfo.Should().HaveCount(1);
         }
-        
+
         public void Then_class_name_is_note()
         {
             _classInfo.First().Name.Should().Be("note");
@@ -34,6 +35,5 @@ namespace Xml2CSharp.Tests.Specs.Converter
         {
             _classInfo.First().Fields.Should().HaveCount(4);
         }
-
     }
 }
