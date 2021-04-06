@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using FluentAssertions;
+
 namespace Xml2CSharp.Tests.Specs.Pocos
 {
     public class When_class_list

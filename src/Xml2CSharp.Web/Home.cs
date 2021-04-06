@@ -1,5 +1,7 @@
 ﻿using System.IO;
 
+using Nancy;
+
 namespace Xml2CSharp.Web
 {
     public class Home : NancyModule

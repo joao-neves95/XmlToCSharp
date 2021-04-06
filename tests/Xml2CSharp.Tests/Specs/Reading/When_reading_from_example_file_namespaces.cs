@@ -3,6 +3,8 @@ using System.IO;
 using System.Linq;
 using System.Xml.Serialization;
 
+using FluentAssertions;
+
 using Xml2CSharp.ExampleOutputs;
 
 namespace Xml2CSharp.Tests.Specs.Reading

@@ -14,6 +14,9 @@
 using System;
 using System.IO;
 
+using CommandLine;
+using CommandLine.Text;
+
 namespace Xml2CSharp.Clent
 {
     /// <summary>

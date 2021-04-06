@@ -1,6 +1,9 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+
+using Fixie;
 
 namespace Xml2CSharp.Tests.Specs
 {

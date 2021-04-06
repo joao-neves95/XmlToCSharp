@@ -2,6 +2,8 @@
 using System.IO;
 using System.Text;
 
+using FluentAssertions;
+
 namespace Xml2CSharp.Tests.Specs.Writer
 {
     public class When_writing

@@ -2,6 +2,8 @@
 using System.IO;
 using System.Linq;
 
+using FluentAssertions;
+
 namespace Xml2CSharp.Tests.Specs.ConvertExamples
 {
     public class When_converting_examples

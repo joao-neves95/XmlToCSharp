@@ -1,5 +1,8 @@
+
 using System.Collections.Generic;
 using System.Linq;
+
+using FluentAssertions;
 
 namespace Xml2CSharp.Tests.Specs.Converter
 {

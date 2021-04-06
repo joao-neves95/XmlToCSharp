@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
+using FluentAssertions;
+
 namespace Xml2CSharp.Tests.Specs.Converter
 {
     public class When_xml_has_empty_nodes
@@ -10,10 +12,10 @@ namespace Xml2CSharp.Tests.Specs.Converter
         public When_xml_has_empty_nodes()
         {
             const string xml = @"<note>
-	<to>Tove</to>
-	<from>Jani</from>
-	<heading>Reminder</heading>
-	<body>Don't forget me this weekend!</body>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
 </note>
 ";
             _classInfo = new Xml2CSharpConverer().Convert(xml);
