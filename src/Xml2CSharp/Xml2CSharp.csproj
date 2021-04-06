@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <AssemblyName>Xml2CSharp</AssemblyName>
@@ -6,6 +6,7 @@
     <PackageId>LibXml2CSharp</PackageId>
     <TargetFrameworks>net472;netcoreapp3.0;net5.0</TargetFrameworks>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
     <NeutralLanguage />
     
     <PackageLicenseFile>LICENSE</PackageLicenseFile>

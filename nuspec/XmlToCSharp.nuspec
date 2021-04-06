@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>XmlToCSharp</id>
-		<version>1.0.0-pre06</version>
+    <version>1.0.1</version>
     <title>XmlToCSharp</title>
     <authors>Invisionware</authors>
     <owners>Invisionware</owners>
