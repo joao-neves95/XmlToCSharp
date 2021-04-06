@@ -5,7 +5,7 @@
     <RootNamespace>Xml2CSharp</RootNamespace>
     <PackageId>LibXml2CSharp</PackageId>
     <TargetFrameworks>net472;netcoreapp3.0;net5.0</TargetFrameworks>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.1</Version>
     <NeutralLanguage />
     
@@ -35,5 +35,11 @@
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
