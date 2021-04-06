@@ -3,8 +3,8 @@
 // Author           : msyoung
 // Created          : 08-04-2018
 //
-// Last Modified By : msyoung
-// Last Modified On : 08-04-2018
+// Last Modified By : João Neves (_SHIVAYL_) - https://github.com/joao-neves95/
+// Last Modified On : 2021-04-06
 // ***********************************************************************
 // <copyright file="ClassInfoWriter.cs" company="">
 //     Copyright ©  2014
@@ -14,6 +14,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Xml2CSharp
 {
@@ -22,6 +23,8 @@ namespace Xml2CSharp
     /// </summary>
     public class ClassInfoWriter
     {
+        private readonly string TAB_CHAR = string.Empty.PadRight(4);
+
         /// <summary>
         /// The class information
         /// </summary>
@@ -47,23 +50,32 @@ namespace Xml2CSharp
         {
             textWriter.WriteLine("using System;");
             textWriter.WriteLine("using System.Xml.Serialization;");
-            if (_classInfo.SelectMany(x => x.Fields).Any(x => x.IsGenericCollection)) textWriter.WriteLine("using System.Collections.Generic;");
+            
+            if (this._classInfo.SelectMany(x => x.Fields).Any(x => x.IsGenericCollection))
+            {
+                textWriter.WriteLine("using System.Collections.Generic;");
+            }
 
             textWriter.WriteLine();
 
-            if (!string.IsNullOrEmpty(_customNameSpace))
+            if (!string.IsNullOrEmpty(this._customNameSpace))
             {
-                textWriter.WriteLine("namespace {0}", _customNameSpace);
+                textWriter.WriteLine("namespace {0}", this._customNameSpace);
                 textWriter.WriteLine("{");
             }
         }
 
         public void WriteFooter(TextWriter textWriter)
         {
-            if (!string.IsNullOrEmpty(_customNameSpace))
+            if (!string.IsNullOrEmpty(this._customNameSpace))
             {
                 textWriter.WriteLine("}");
             }
+        }
+
+        public async Task WriteAsync(TextWriter textWriter)
+        {
+            await Task.Run(() => this.Write(textWriter));
         }
 
         /// <summary>
@@ -76,10 +88,10 @@ namespace Xml2CSharp
 
             if (!string.IsNullOrEmpty(_customNameSpace))
             {
-                tabChar = "\t";
+                tabChar = this.TAB_CHAR;
             }
 
-            foreach (var @class in _classInfo)
+            foreach (Class @class in this._classInfo)
             {
                 textWriter.Write("{0}[XmlRoot(ElementName=\"{1}\"", tabChar, @class.XmlName);
 
@@ -91,16 +103,19 @@ namespace Xml2CSharp
                 textWriter.WriteLine("{0}public class {1}", tabChar, @class.Name);
                 textWriter.WriteLine("{0}{{", tabChar);
 
-                foreach (var field in @class.Fields)
+                foreach (Field field in @class.Fields)
                 {
-                    textWriter.Write("{0}\t[Xml{1}({1}Name=\"{2}\"", tabChar, field.XmlType, field.XmlName);
+                    textWriter.Write("{0}{1}[Xml{2}({2}Name=\"{3}\"", tabChar, this.TAB_CHAR, field.XmlType, field.XmlName);
 
-                    if (!string.IsNullOrEmpty(field.Namespace)) textWriter.Write(", Namespace=\"{0}\"", field.Namespace);
+                    if (!string.IsNullOrEmpty(field.Namespace))
+                    {
+                        textWriter.Write(", Namespace=\"{0}\"", field.Namespace);
+                    }
 
                     textWriter.Write(")]");
                     textWriter.WriteLine();
 
-                    textWriter.WriteLine("{0}\tpublic {1} {2} {{ get; set; }}", tabChar, field.Type, field.Name);
+                    textWriter.WriteLine("{0}{1}public {2} {3} {{ get; set; }}", tabChar, this.TAB_CHAR, field.Type, field.Name);
                 }
 
                 textWriter.Write(tabChar);
